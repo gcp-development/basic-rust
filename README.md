@@ -28,10 +28,7 @@ Execute the compiled code.
 cargo clean
 ```
 
-References:
-
-[The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
-
-[The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)
-
-[rustlings](https://github.com/rust-lang/rustlings/)
+References:<br/>
+[The Cargo Book](https://doc.rust-lang.org/cargo/index.html)<br/>
+[The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)<br/>
+[rustlings](https://github.com/rust-lang/rustlings/)<br/>
