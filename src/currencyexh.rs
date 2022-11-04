@@ -87,3 +87,31 @@ pub fn exchange_to_dollars<C: Currency>(money: &C) -> f64 {
 pub fn exchange_to_pounds<C: Currency>(money: &C) -> f64 {
 	money.to_pounds()
 }
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test_exchange_to_euros() {
+        const RESULT: f64 = 101.40049;
+		let dollars= super::Dollars {
+			amount: 100.0,
+		};
+        assert_eq!(super::exchange_to_euros(&dollars), RESULT);
+    }
+     #[test]
+    fn test_exchange_to_dollars() {
+        const RESULT: f64 = 98.610902;
+        let euros= super::Euros {
+			amount: 100.0,
+		};
+        assert_eq!(super::exchange_to_dollars(&euros), RESULT);
+    }
+	#[test]
+    fn test_exchange_to_pounds() {
+        const RESULT: f64 = 87.320172;
+		let dollars= super::Dollars {
+			amount: 100.0,
+		};
+        assert_eq!(super::exchange_to_pounds(&dollars), RESULT);
+    }
+}
