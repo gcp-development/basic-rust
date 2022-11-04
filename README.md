@@ -13,10 +13,16 @@ Build the [documentation](https://doc.rust-lang.org/cargo/commands/cargo-doc.htm
 cargo doc
 ```
 
+[Compile](https://doc.rust-lang.org/cargo/commands/cargo-build.html) local packages and all of their dependencies.
 ```bash
 cargo build
 ```
 
 ```bash
 ./target/debug/basic-rust --dev
+```
+
+[Remove](https://doc.rust-lang.org/cargo/commands/cargo-clean.html) artifacts from the target directory that Cargo has generated in the past.
+```bash
+cargo clean
 ```
